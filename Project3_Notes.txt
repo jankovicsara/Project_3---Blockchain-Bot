@@ -1,0 +1,34 @@
+#Contracts - When hosted in AWS then Lex bot used to automate account
+		creation. Also, lets user do basic back commands such as:
+			Get Balance
+			Deposit
+			Withdraw
+			Send Ether
+			Transfer
+
+Bank - 3 things: 
+	1. Takes in branch ID for given bank and creates a branch name?
+	2. Vlookups a Branchname
+	3. Creates account at branch
+
+Branch - 
+	1. Connected to 'PersonalAccount' contract to execute contract provided
+		we enter in a user wallet address
+	2. recalls the Branchname
+	3. Creates either a Personal or Business Account
+
+Accounts - Used when creating either Personal or Business Account
+	Allows user to input account details when called (AccountID and Name)
+
+PersonalAccount - Used in Branch contract
+	Ask for Account details and then Funds? Withdraw and Transfer functions?
+
+Business Account - Used in Branch contract
+	Ask for Account details and then Funds? Withdraw and Deposit functions?
+	Also get balance
+
+JointSavings - from class exercise; Will do an action
+	withdraw
+	deposit
+	
+---------------------------------
